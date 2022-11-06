@@ -1,0 +1,161 @@
+[
+    {
+        "submissions": [
+            {
+                "submission_type": "SUPPL",
+                "submission_number": "16",
+                "submission_status": "AP",
+                "submission_status_date": "20140922",
+                "review_priority": "STANDARD",
+                "submission_class_code": "LABELING",
+                "submission_class_code_description": "Labeling"
+            },
+            {
+                "submission_type": "SUPPL",
+                "submission_number": "14",
+                "submission_status": "AP",
+                "submission_status_date": "20140922",
+                "review_priority": "STANDARD",
+                "submission_class_code": "LABELING",
+                "submission_class_code_description": "Labeling"
+            },
+            {
+                "submission_type": "SUPPL",
+                "submission_number": "6",
+                "submission_status": "AP",
+                "submission_status_date": "20060926",
+                "submission_class_code": "LABELING",
+                "submission_class_code_description": "Labeling"
+            },
+            {
+                "submission_type": "SUPPL",
+                "submission_number": "4",
+                "submission_status": "AP",
+                "submission_status_date": "20060731",
+                "submission_class_code": "LABELING",
+                "submission_class_code_description": "Labeling"
+            },
+            {
+                "submission_type": "SUPPL",
+                "submission_number": "15",
+                "submission_status": "AP",
+                "submission_status_date": "20140922",
+                "review_priority": "STANDARD",
+                "submission_class_code": "LABELING",
+                "submission_class_code_description": "Labeling"
+            },
+            {
+                "submission_type": "ORIG",
+                "submission_number": "1",
+                "submission_status": "AP",
+                "submission_status_date": "20050823",
+                "application_docs": [
+                    {
+                        "id": "22319",
+                        "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2005/065189_ORIGINAL APPROVAL_PACKAGE.pdf",
+                        "date": "20080731",
+                        "type": "Review"
+                    }
+                ]
+            }
+        ],
+        "application_number": "ANDA065189",
+        "sponsor_name": "SANDOZ",
+        "openfda": {
+            "application_number": [
+                "ANDA065189"
+            ],
+            "brand_name": [
+                "AMOXICILLIN AND CLAVULANATE POTASSIUM"
+            ],
+            "generic_name": [
+                "AMOXICILLIN AND CLAVULANATE POTASSIUM"
+            ],
+            "manufacturer_name": [
+                "Northstar RxLLC",
+                "Sandoz Inc"
+            ],
+            "product_ndc": [
+                "16714-476",
+                "16714-477",
+                "16714-014",
+                "0781-1874",
+                "0781-1831",
+                "0781-1852",
+                "0781-6102",
+                "0781-6104",
+                "0781-1619",
+                "0781-1643"
+            ],
+            "product_type": [
+                "HUMAN PRESCRIPTION DRUG"
+            ],
+            "route": [
+                "ORAL"
+            ],
+            "substance_name": [
+                "AMOXICILLIN",
+                "CLAVULANATE POTASSIUM"
+            ],
+            "rxcui": [
+                "562251",
+                "562508",
+                "617296"
+            ],
+            "spl_id": [
+                "1f95309a-ce1e-431e-857e-273dba7c4d82",
+                "18f47bef-d86f-42c3-8ef7-a61984dbf738"
+            ],
+            "spl_set_id": [
+                "d6bff811-a6ea-4e4e-a4eb-b34b966cdb40",
+                "7cba82f0-9886-46e9-8dbd-43a448aade29"
+            ],
+            "package_ndc": [
+                "16714-476-01",
+                "16714-477-01",
+                "16714-014-01",
+                "0781-1874-31",
+                "0781-1831-20",
+                "0781-1831-13",
+                "0781-1831-01",
+                "0781-1852-20",
+                "0781-1852-13",
+                "0781-1852-01",
+                "0781-6102-46",
+                "0781-6102-57",
+                "0781-6102-52",
+                "0781-6104-46",
+                "0781-6104-57",
+                "0781-6104-52",
+                "0781-1619-66",
+                "0781-1643-66"
+            ],
+            "unii": [
+                "Q42OMW3AT8",
+                "804826J2HU"
+            ]
+        },
+        "products": [
+            {
+                "product_number": "001",
+                "reference_drug": "No",
+                "brand_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+                "active_ingredients": [
+                    {
+                        "name": "AMOXICILLIN",
+                        "strength": "250MG"
+                    },
+                    {
+                        "name": "CLAVULANATE POTASSIUM",
+                        "strength": "EQ 125MG BASE"
+                    }
+                ],
+                "reference_standard": "Yes",
+                "dosage_form": "TABLET",
+                "route": "ORAL",
+                "marketing_status": "Prescription",
+                "te_code": "AB"
+            }
+        ]
+    }
+]

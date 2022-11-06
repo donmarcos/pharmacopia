@@ -1,0 +1,63 @@
+[
+    {
+        "product_ndc": "68071-2448",
+        "generic_name": "Amoxicillin and Clavulanate Potassium",
+        "labeler_name": "NuCare Pharmaceuticals,Inc.",
+        "brand_name": "Amoxicillin and Clavulanate Potassium",
+        "active_ingredients": [
+            {
+                "name": "AMOXICILLIN",
+                "strength": "875 mg/1"
+            },
+            {
+                "name": "CLAVULANATE POTASSIUM",
+                "strength": "125 mg/1"
+            }
+        ],
+        "finished": true,
+        "packaging": [
+            {
+                "package_ndc": "68071-2448-3",
+                "description": "3 TABLET in 1 BOTTLE (68071-2448-3)",
+                "marketing_start_date": "20210614",
+                "sample": false
+            }
+        ],
+        "listing_expiration_date": "20221231",
+        "openfda": {
+            "manufacturer_name": [
+                "NuCare Pharmaceuticals,Inc."
+            ],
+            "rxcui": [
+                "562508"
+            ],
+            "spl_set_id": [
+                "c4bd9fbe-b812-6f9a-e053-2a95a90a0108"
+            ],
+            "upc": [
+                "0368071244830"
+            ],
+            "unii": [
+                "804826J2HU",
+                "Q42OMW3AT8"
+            ]
+        },
+        "marketing_category": "NDA",
+        "dosage_form": "TABLET",
+        "spl_id": "c4bd9fbe-b813-6f9a-e053-2a95a90a0108",
+        "product_type": "HUMAN PRESCRIPTION DRUG",
+        "route": [
+            "ORAL"
+        ],
+        "marketing_start_date": "20191212",
+        "product_id": "68071-2448_c4bd9fbe-b813-6f9a-e053-2a95a90a0108",
+        "application_number": "NDA050720",
+        "brand_name_base": "Amoxicillin and Clavulanate Potassium",
+        "pharm_class": [
+            "Penicillin-class Antibacterial [EPC]",
+            "Penicillins [CS]",
+            "beta Lactamase Inhibitor [EPC]",
+            "beta Lactamase Inhibitors [MoA]"
+        ]
+    }
+]
