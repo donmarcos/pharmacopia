@@ -3,11 +3,12 @@ import json
 from textract import textract_main
 from comprehend import comprehend_main
 BUCKET = os.environ['BUCKET']
-DOCUMENT = 'print.pbm'
 REGION = os.environ['REGION']
+# DOCUMENT = 'print.pbm'
 
 def lambda_handler(event, context):
-    DOCUMENT = event["object_name"]
+    body = json.loads(event['body'])
+    DOCUMENT = body["object_name"]
     summary = textract_main(BUCKET, DOCUMENT, REGION)
     entities = comprehend_main(REGION, " ".join(summary))
     

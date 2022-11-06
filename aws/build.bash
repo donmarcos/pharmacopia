@@ -17,4 +17,4 @@ cd function
 
 zip -r ../processImage.zip .
 cd ..
-# rm -r function
+rm -r function
