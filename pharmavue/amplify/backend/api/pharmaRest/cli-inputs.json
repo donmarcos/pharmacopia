@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "paths": {
+    "/info": {
+      "name": "/info",
+      "lambdaFunction": "pharmavuec5407e92",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/druginfo": {
+      "name": "/druginfo",
+      "lambdaFunction": "pharmavueproxy",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
