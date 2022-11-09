@@ -11,8 +11,10 @@
     "@aws-amplify/ui-components": "^1.9.40",
     "aws-amplify": "^4.3.43",
     "core-js": "^3.6.5",
+    "save": "^2.9.0",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
