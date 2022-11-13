@@ -9,15 +9,25 @@
       "UnauthRoleName": "amplify-pharmavue-dev-00011-unauthRole",
       "StackName": "amplify-pharmavue-dev-00011",
       "StackId": "arn:aws:cloudformation:us-west-2:181571321432:stack/amplify-pharmavue-dev-00011/a970dcd0-5da0-11ed-88d3-0aa9960067cd",
-      "AmplifyAppId": "dw19klxf0z8eq"
+      "AmplifyAppId": "dw19klxf0z8eq",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-pharmavue-dev-00011-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {
-        "pharmavuec5407e92": {},
-        "pharmavueproxy": {}
+        "pharmavuec5407e92": {
+          "deploymentBucketName": "amplify-pharmavue-dev-00011-deployment",
+          "s3Key": "amplify-builds/pharmavuec5407e92-4146566c766376644952-build.zip"
+        },
+        "pharmavueproxy": {
+          "deploymentBucketName": "amplify-pharmavue-dev-00011-deployment",
+          "s3Key": "amplify-builds/pharmavueproxy-44444a42734b57694568-build.zip"
+        }
       },
       "auth": {
         "pharmavue": {}
+      },
+      "api": {
+        "pharmaRest": {}
       }
     }
   }
