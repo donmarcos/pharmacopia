@@ -39,6 +39,12 @@ Hub.listen("auth", async (data) => {
 
 const routes = [
   {
+  path: '/',
+  name: 'Home',
+        component: Home,
+  meta: { requiresAuth: true}
+ },
+  {
     path: '/login',
     name: 'login',
     component: Login
@@ -46,7 +52,8 @@ const routes = [
   {
   path: '/home',
   name: 'home',
-  component: Home
+      component: Home,
+  meta: { requiresAuth: true}
 },
   {
     path: '/about',

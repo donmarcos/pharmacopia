@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import AmplifyVue from '@aws-amplify/ui-vue';
 import {
   applyPolyfills,
   defineCustomElements
@@ -18,5 +19,4 @@ applyPolyfills().then(() => {
 
 const app = createApp(App);
 app.config.isCustomElement = tag => tag.startsWith('amplify-');
-app.use(store).use(router).mount('#app');
-
+app.use(AmplifyVue).use(store).use(router).mount('#app');
