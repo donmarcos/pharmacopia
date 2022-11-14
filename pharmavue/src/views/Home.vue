@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/pharmacopialogo.png">
-    <amplify-sign-out></amplify-sign-out>
   </div>
   <div>
     <VueSidebarMenuAkahon 
