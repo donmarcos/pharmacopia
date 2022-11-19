@@ -1,14 +1,34 @@
 <template>
   
   <div id="nav">
-   <!--
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-   -->
+    <VueSidebarMenuAkahon 
+      menuTitle="pharmacopia"
+      :menuItems="navItems"
+      bgColor ="#4F9F60"
+      profileName="Patient John Q"
+      profileRole="Sample"
+    />
   </div>
 
   <router-view/>
 </template>
+
+<script>
+import VueSidebarMenuAkahon from "vue-sidebar-menu-akahon";
+import navItems from "./components/NavBarItems";
+  
+export default {
+  name: "App",
+  components: {
+    VueSidebarMenuAkahon
+  },
+  data () {
+    return {
+      navItems: navItems
+    }
+  }
+}
+</script>
 
 <style>
 #app {

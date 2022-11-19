@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import { Hub } from "@aws-amplify/core"
 import Auth from "@aws-amplify/auth"
 import Login from '../components/Login.vue'
+import Upload from '../components/Upload.vue'
 import store from '../store/index.js'
 
 
@@ -53,6 +54,11 @@ const routes = [
   path: '/home',
   name: 'home',
       component: Home
+},
+{
+  path: '/upload',
+  name: 'upload',
+      component: Upload
 },
   {
     path: '/about',
