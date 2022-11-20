@@ -1,13 +1,13 @@
 <template>
     <div class="">
         <div class="">
-            <div class="">
+            <div class="form-header">
                 <h1 class="">Choose an image</h1>
             </div>
-            <div>
+            <div class="form-body">
                 <form @submit="uploadFile">
                     <div class="">
-                        <div class="p-4">
+                        <div class="">
                             <input 
                                 type="file" 
                                 id="documentUpload" 
@@ -15,13 +15,14 @@
                                 class="hover:cursor-pointer" 
                                 accept="image/png, image/jpeg"
                                 @change="onChange"
+                                required 
                             />
                         </div>
-                        <div class="">
+                        <div class="form-submit">
                             <input 
                                 type="submit" 
                                 value="Upload" 
-                                class="border-2 rounded-lg px-2 py-px hover:cursor-pointer"
+                                class="border-2 rounded-lg px-2 py-px hover:cursor-pointer submit-btn"
                             />
                         </div>
                     </div>
@@ -29,16 +30,21 @@
             </div>
         </div>
         <div 
-            class="" 
+            class="modal" 
             v-show="imageUpload"
-            @click="closeModal"
         >
-            <div class="">
-                <h2 class="">Preview</h2>
-                <img :src="image" alt="Uploaded image" />
-                <button class="" @click="closeModal">
-                    Close
-                </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="">Image Preview</h2>
+                </div>
+                <div class="modal-body">
+                    <img :src="image" alt="Uploaded image" />
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-close" @click="closeModal">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -47,6 +53,14 @@
 <script>
     export default {
         name: 'Upload',
+        mounted () {
+            window.onclick = function(event) {
+                if (event.target.className === "modal") {
+                    this.imageUpload = false;
+                    event.target.style.display = "none";
+                }
+            }
+        },
         data() {
             return { 
                 imageUpload: false,
@@ -85,7 +99,7 @@
             uploadFile: async function (e) {
                 e.preventDefault();
 
-                console.log("target::", e);
+                console.log("target::", e.target.className);
 
                 let formData = new FormData(e.target);
 
@@ -110,3 +124,59 @@
         }
     }
 </script>
+<style>
+    .modal {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        left: 0;
+        top: 0;
+        margin-left: auto;
+        padding-top: 50px;
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #FFF;
+        margin: auto;
+        width: 60%;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .modal-header {
+        padding: 10px;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+
+    .modal-footer {
+        padding: 10px;
+    }
+
+    .modal-close {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        background-color: #5F8D4E;
+    }
+
+    .submit-btn {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #A4BE7B;
+    }
+
+    .form-body,.form-submit {
+        margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+        cursor: pointer;
+    }
+</style>
