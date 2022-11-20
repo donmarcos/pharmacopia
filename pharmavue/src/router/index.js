@@ -12,7 +12,7 @@ let user;
 
 getUser().then((user) => {
     if (user) {
-        router.push({path: '/'});
+        //router.push({path: '/home'});
     }
 });
 
@@ -35,7 +35,7 @@ Hub.listen("auth", async (data) => {
         router.push({path: '/login'});
     } else if (data.payload.event === 'signIn') {
         user = await getUser();
-        router.push({path: '/'});
+        router.push({path: '/home'});
     }
 });
 

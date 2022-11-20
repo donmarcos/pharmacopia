@@ -1,4 +1,7 @@
 <template>
+    <div style="padding: var(--amplify-space-large); text-align: center">
+        <img class="amplify-image" alt="Amplify logo" src="../assets/pharmacopialogo.png" />
+    </div>
     <div class="logout">
         <authenticator>
             <template v-slot="{ user, signOut }">
