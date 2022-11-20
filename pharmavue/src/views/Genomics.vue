@@ -3,8 +3,8 @@
     <img alt="Vue logo" src="../assets/pharmacopialogo.png">
   </div>
   <div>
-    <h2>Dashboard</h2>
+    <h2>Genomics</h2>
     <br />
-    <img alt="Vue logo" src="../assets/mceclip0.jpg" width="600" height="1350" />
+    <img alt="Vue logo" src="../assets/ibprofen_gen.webp" />
   </div>
 </template>
