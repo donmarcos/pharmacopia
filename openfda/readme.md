@@ -1,4 +1,4 @@
-## Project setup
+## Run Notebook in Local Machine
 
 ### AWS Configuration
 
