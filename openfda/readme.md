@@ -18,10 +18,10 @@ aws_access_key_id = ""
 aws_secret_access_key = ""
 ```
 
-Refer to [AWS Docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-
 ### Install dependencies using conda or pip
 
 ### Run the jupyter notebook
 
+### Reference
 
+Refer to [AWS Docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
