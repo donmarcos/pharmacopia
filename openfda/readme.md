@@ -2,7 +2,7 @@
 
 ### AWS Configuration
 
-- Install AWS CLI
+- Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 - Setting up aws creds
 
