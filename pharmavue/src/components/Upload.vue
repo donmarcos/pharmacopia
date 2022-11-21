@@ -21,7 +21,7 @@ const FilePond = vueFilePond(
     FilePondPluginImagePreview
 );
 
-import axios from 'axios'
+
 import { singleUpload, deleteObjectByKey } from './aws'
 
 export default {
