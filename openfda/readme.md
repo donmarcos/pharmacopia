@@ -18,9 +18,19 @@ aws_access_key_id = ""
 aws_secret_access_key = ""
 ```
 
-### Install dependencies using conda or pip
+### Install dependencies in project directory
+
+```
+$ dir/conda install
+or 
+$ pip install
+```
 
 ### Run the jupyter notebook
+
+```
+$ jupyter notebook
+```
 
 ### Reference
 
