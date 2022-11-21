@@ -2,17 +2,20 @@
 
 ### AWS Configuration
 
-Install AWS CLI
+- Install AWS CLI
 
-Setting up aws creds: [Or different path in case of windows]
+- Setting up aws creds
 
+```
 $ vim ~/.aws/credentials
+```
+
+- Add the following information with respective keys
 
 ```
 [rearc]
 aws_access_key_id = ""
 aws_secret_access_key = ""
-or "aws configure" works 
 ```
 
 Refer to [AWS Docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
