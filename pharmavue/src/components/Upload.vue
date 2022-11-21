@@ -9,6 +9,10 @@
             },
         }" @removefile="onRemoveFile" />
     </div>
+    <div>
+         Process Prescription from data <br>
+         {{ inSummary}}
+    </div>
 </template>
 
 <script>
@@ -21,7 +25,7 @@ const FilePond = vueFilePond(
     FilePondPluginImagePreview
 );
 
-
+import axios from 'axios'
 import { singleUpload, deleteObjectByKey } from './aws'
 
 export default {
@@ -32,10 +36,23 @@ export default {
     data() {
         return {
             imageUpload: false,
-            image: ''
+            image: '',
+            inSummary: '',
+            results: []
         };
     },
     methods: {
+        async processFile(file) { 
+            console.log("processing file ", file)
+            const res = await axios.post('https://k6hdpt4e4diw4to47ojogmv7m40blyku.lambda-url.us-west-2.on.aws/', {
+                object_name: file,
+            });
+            console.log(res);
+            this.results = res.data
+            this.inSummary = this.results.summary
+            console.log(this.results.summary)
+
+        },
         async uploadFile(file, metadata, load, error, progress, abort) {
             const result = await singleUpload(
                 file,
@@ -44,6 +61,9 @@ export default {
             if (result.status === 200) {
                 // Handle storing it to your database here
                 load(file) // Let FilePond know the processing is done
+                console.log("filename is ", result)
+                console.log("filename key is ", result.key)
+                this.processFile(result.key)
             } else {
                 error() // Let FilePond know the upload was unsuccessful
             }

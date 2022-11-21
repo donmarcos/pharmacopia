@@ -33,6 +33,7 @@ export const singleUpload = (file, folder) => {
       const bucketUrl = decodeURIComponent(result.request.responseURL).split(
         key
       )[0]
+      result.file = file
       result.key = key
       result.fullPath = bucketUrl + key
       return result
@@ -42,6 +43,15 @@ export const singleUpload = (file, folder) => {
       console.log(err)
     })
 }
+
+export const procFile = (file) => {
+      console.log("aws processing file ", file)
+       const res =  axios.post('https://k6hdpt4e4diw4to47ojogmv7m40blyku.lambda-url.us-west-2.on.aws/', {
+     object_name: file,
+ });
+ console.log(res);
+}
+
 
 export const deleteObjectByKey = key => {
   const params = {
