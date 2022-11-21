@@ -17,11 +17,17 @@ $ vim ~/.aws/credentials
 aws_access_key_id = ""
 aws_secret_access_key = ""
 ```
+### Create Environment
+
+```
+$ conda create -n myenv
+$ conda activate myenv
+```
 
 ### Install dependencies in project directory
 
 ```
-$ dir/conda install
+$ conda install
 or 
 $ pip install
 ```
